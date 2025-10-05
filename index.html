@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./styles.css">
+<title>Visual Studio C++ Console Simulator</title>
+</head>
+<body>
+    
+    <div class="container">
+    <header>
+      <h1>C++ Console Simulator</h1>
+    </header>
+  <div class="code-section">
+    <textarea id="cppCode">#include <iostream>
+using namespace std;
+
+int main() {
+    
+    return 0;
+}</textarea>
+    
+    <div class="controls">
+      <button id="runBtn">▶ Run Program</button>
+      <button id="resetBtn">⟲ Reset</button>
+      <span class="status" id="status">Status: Idle</span>
+    </div>
+  </div>
+  
+  <div class="console-section">
+    <div class="console-label">Console Output:</div>
+    <div id="console"></div>
+  </div>
+  
+  <div class="input-section">
+    <span class="input-label">Input:</span>
+    <input type="text" id="userInput" placeholder="Type input and press Enter" disabled>
+  </div>
+</div>
+
+<footer>
+  <p>©Copyright 2025 - Visual Studio C++ Console Simulator</p>
+  <p>Made with AI-powered simulation</p>
+</footer>
+
+<script src="./index.js">
+
+</script>
+</body>
+</html>
