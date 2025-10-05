@@ -35,16 +35,13 @@ async function sendMessage(content) {
     userInput.disabled = true;
     setStatus("Processing...", "running");
     
-    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+const response = await fetch("/.netlify/functions/chat", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Bearer ${apiKey}`
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "gpt-4o",
-        messages: messages,
-        temperature: 0.1
+        messages: messages
       })
     });
     
